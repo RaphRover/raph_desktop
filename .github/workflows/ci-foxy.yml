@@ -49,5 +49,5 @@ jobs:
           distribution: ${{ env.ROS_DISTRO }}
           linter: ${{ matrix.linter }}
           package-name: |
-            leo_desktop
-            leo_viz
+            leo2_desktop
+            leo2_viz
