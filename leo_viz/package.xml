@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>leo_viz</name>
+  <name>leo2_viz</name>
   <version>1.0.0</version>
   <description>
     Visualization launch files and RViz configurations for Leo Rover
@@ -23,7 +23,7 @@
   <exec_depend>joint_state_publisher_gui</exec_depend>
   <exec_depend>rviz2</exec_depend>
 
-  <exec_depend>leo_description</exec_depend>
+  <exec_depend>leo2_description</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
