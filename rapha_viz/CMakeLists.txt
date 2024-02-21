@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(leo2_viz)
+project(rapha_viz)
 
 find_package(ament_cmake REQUIRED)
 
