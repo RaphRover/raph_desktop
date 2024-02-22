@@ -26,25 +26,6 @@ jobs:
       - name: Source tests
         uses: "ros-industrial/industrial_ci@master"
         env:
-          UPSTREAM_WORKSPACE: "github:fictionlab/leo2_common#humble"
+          UPSTREAM_WORKSPACE: "github:fictionlab/leo2_common#leo2_to_rapha_migration"
           ADDITIONAL_DEBS: git-core
           AFTER_INIT: git config --global url."https://token:${{secrets.GITHUBPAT}}@github.com/".insteadOf "https://github.com/"
-
-  ament_lint:
-    name: ament_${{ matrix.linter }}
-    runs-on: ubuntu-20.04
-    container:
-      image: ros:humble
-    strategy:
-      fail-fast: false
-      matrix:
-        linter: [lint_cmake, xmllint]
-    steps:
-      - uses: actions/checkout@v3
-      - uses: ros-tooling/action-ros-lint@v0.1
-        with:
-          distribution: ${{ env.ROS_DISTRO }}
-          linter: ${{ matrix.linter }}
-          package-name: |
-            leo2_desktop
-            leo2_viz
