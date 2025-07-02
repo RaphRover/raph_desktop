@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(rapha_viz)
+project(raph_viz)
 
 find_package(ament_cmake REQUIRED)
 
