@@ -1,5 +1,5 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package rapha_viz
+Changelog for package raph_viz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 0.0.1 (2024-07-22)
