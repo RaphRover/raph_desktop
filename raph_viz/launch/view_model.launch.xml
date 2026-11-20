@@ -7,5 +7,7 @@
   <node unless="$(var gui)" pkg="joint_state_publisher" exec="joint_state_publisher" />
   <node if="$(var gui)" pkg="joint_state_publisher_gui" exec="joint_state_publisher_gui" />
 
-  <include file="$(find-pkg-share raph_viz)/launch/rviz.launch.xml" />
+  <include file="$(find-pkg-share raph_viz)/launch/rviz.launch.xml" >
+    <arg name="config" value="model" />
+  </include>
 </launch>
